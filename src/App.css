@@ -1,4 +1,3 @@
-/* src/index.css or src/App.css */
 @font-face {
   font-family: 'Cascadia Code';
   src: url('./assets/fonts/CascadiaCode.woff2') format('woff2');
@@ -27,40 +26,29 @@ body {
   flex: 1;
 }
 
-
 input[type=checkbox] {
   height: 20px;
   width: 20px;
   border: 2px solid black;
-  /* Add a border for visual feedback */
   border-radius: 3px;
-  /* Optional: Round the corners */
   background-color: white;
-  /* Optional: Set a background color */
   cursor: pointer;
-  /* Make it look clickable */
 }
 
 .todo-container {
   border: 2px dashed black;
   padding: 25px;
   border-radius: 10px 10px;
-  width: 75%; /* Adjust width for responsiveness */
-  margin: 50px auto; /* Center the container */
-  /* Add padding to prevent touching the edges */
-  /* padding-left: 10px; Adjust as needed
-  padding-right: 10px; Adjust as needed */
+  margin: 50px auto;
 }
 
 .todo-container-darkmode {
   border: 2px dashed white;
   padding: 25px;
   border-radius: 10px 10px;
-  width: 75%; /* Adjust width for responsiveness */
-  margin: 50px auto; /* Center the container */
-  /* Add padding to prevent touching the edges */
-  padding-left: 10px; /* Adjust as needed */
-  padding-right: 10px; /* Adjust as needed */
+  margin: 50px auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .todo-app {
@@ -68,11 +56,10 @@ input[type=checkbox] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 90%; /* Adjust width for responsiveness */
+  min-width: 90%;
   min-height: 100vh;
   overflow: hidden;
 }
-
 
 .todo-icon:hover {
   color: hsla(204, 82%, 66%, 1);
@@ -116,7 +103,7 @@ input[type=checkbox] {
 
 .todo-edit-input[type=text] {
   height: 32px;
-  width: 75%; /* Adjust width for responsiveness */
+  width: 75%;
   border: none;
   outline: none;
   font-family: Cascadia Code, monospace;
@@ -126,7 +113,7 @@ input[type=checkbox] {
 
 .todo-edit-input-darkmode[type=text] {
   height: 32px;
-  width: 75%; /* Adjust width for responsiveness */
+  width: 75%;
   border: none;
   outline: none;
   font-family: Cascadia Code, monospace;
@@ -151,7 +138,6 @@ input[type=checkbox] {
   margin: 10px 10px;
   background-color: transparent;
   border: none;
-
 }
 
 .todo-edit-form .todo-edit-icon {
@@ -205,13 +191,9 @@ input[type=checkbox] {
   border: none;
   background: transparent;
   border: 2px solid black;
-  /* Add a border for visual feedback */
   border-radius: 3px;
-  /* Optional: Round the corners */
   background-color: white;
-  /* Optional: Set a background color */
   cursor: pointer;
-  /* Make it look clickable */
 }
 
 .todo-checkbox-darkmode {
@@ -219,34 +201,32 @@ input[type=checkbox] {
   border: none;
   background: transparent;
   border: 2px solid white;
-  /* Add a border for visual feedback */
   border-radius: 3px;
-  /* Optional: Round the corners */
   background-color: black;
-  /* Optional: Set a background color */
   cursor: pointer;
-  /* Make it look clickable */
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
-  .todo-container, .todo-container-darkmode {
-    width: 75%; /* Adjust width for smaller screens */
-    /* Add padding to prevent touching the edges */
-    padding-left: 10px; /* Adjust as needed */
-    padding-right: 10px; /* Adjust as needed */
+@media (max-width: 768px) {
+
+  .todo-container,
+  .todo-container-darkmode {
+    width: 75%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .todo-app {
-    min-width: 75%; /* Adjust width for smaller screens */
+    min-width: 75%;
   }
 
-  .todo-edit-input, .todo-edit-input-darkmode {
-    width: 90%; /* Adjust width for smaller screens */
+    .todo-edit-input,
+    .todo-edit-input-darkmode {
+      width: 90%;
   }
 
-  .todo-input, .todo-input-darkmode {
-    width: 95%; /* Adjust width for smaller screens */
+    .todo-input,
+    .todo-input-darkmode {
+      width: 95%;
   }
 
   .todo-item {
@@ -254,16 +234,18 @@ input[type=checkbox] {
   }
 }
 
-@media (max-width: 480px) { /* Adjust breakpoint as needed */
+@media (max-width: 480px) {
   .todo-items .todo-item .task {
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 14px;
   }
 
-  .todo-edit-input, .todo-edit-input-darkmode {
-    width: 90%; /* Adjust width for smaller screens */
+    .todo-edit-input,
+    .todo-edit-input-darkmode {
+      width: 90%;
   }
 
-  .todo-input, .todo-input-darkmode {
-    width: 95%; /* Adjust width for smaller screens */
+    .todo-input,
+    .todo-input-darkmode {
+      width: 95%;
   }
 }
